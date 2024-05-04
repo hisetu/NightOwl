@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Night Owl</string>
+    <string name="common_next">next</string>
+
+    <string name="region_title">Region:</string>
 </resources>
