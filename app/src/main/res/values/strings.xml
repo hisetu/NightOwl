@@ -3,4 +3,5 @@
     <string name="common_next">next</string>
 
     <string name="region_title">Region:</string>
+    <string name="subregion_load_load_fail">次區域載入失敗</string>
 </resources>

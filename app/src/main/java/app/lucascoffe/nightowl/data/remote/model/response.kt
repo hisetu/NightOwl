@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerialName
 
 
-class Subregion : ArrayList<Subregion.SubregionItem>() {
+class SubregionResponse : ArrayList<SubregionResponse.SubregionItem>() {
     @Serializable
     data class SubregionItem(
         @SerialName("flags")
