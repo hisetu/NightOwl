@@ -1,6 +1,5 @@
 package app.lucascoffe.nightowl.app.regions_list
 
-import android.R
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -15,7 +14,6 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import androidx.navigation.fragment.findNavController
 import app.lucascoffe.nightowl.data.model.Region
 import app.lucascoffe.nightowl.databinding.FragmentRegionListBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -43,7 +41,8 @@ class RegionListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val arrayAdapter = ArrayAdapter<Region>(requireActivity(), R.layout.simple_spinner_item)
+        val arrayAdapter =
+            ArrayAdapter<Region>(requireActivity(), android.R.layout.simple_spinner_item)
 
         with(binding.spRegion) {
             adapter = arrayAdapter
